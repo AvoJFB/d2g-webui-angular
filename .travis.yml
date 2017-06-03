@@ -6,12 +6,12 @@ before_script:
 script: ng build
 deploy:
   provider: s3
-  access_key_id: AKIAIKO2GXRFP3EI6BWA
+  access_key_id: AKIAIHSQYVRI2NZ7YX2A
   secret_access_key:
-    secure: FKGzDs84ZsQDNYnB0H1DPun+AvIcg4OhT2aLP03fMZ52GuMpS4HAZG12a40hwuEPckee8PHKahk/tARKGnKPWBQg5UXV2Mx8fyk1SKDq+BAaU7LMAz7L0MGGcHbImFg16fZb/MVTpDOOsE2VT80wRw+NVBXStiWExyes5NK5X65x+Lj0EuV3vllCOBRg6o
-            jwnVn9mh0YWCHvY29/mk4GA7eKdAhfFLMPvdqOZC2ifAKDyK7dyPWrMa2agWJ7Zw3bao61N9OdtZfiqSmqStho8EczN64YobQZ7LOZRzWl6FZsxKIfgP5sQv8U38kJmQu7zYQlMqzDPoLdFWhPDL+6x2MQEP8bC9IoBIIthlE1+WSU4oFcT3paiF40QEspD6LAKGTwYVx
-            3mPHmoHmKzv2U7JH0U9neoDY7SIsF7ePifddeRYsbQABzANTG4yOGwvAKM6b7tmC9F1SA6ZKvJLj1AnPLFAfJnNHLKGtJ4UGNL64swUrO7Iws+6uScwCHYrcdVr3Gp+EUE6wVSc6g8/Vy/NMoFU8vCvSvc4Mk1MoYpQ9v73fVJplulzbejFs3Yc23IpQV7AS5YXhNlbI+
-            5zvH1n+NKNE7oSFriN1FF6zRDQpvfOiBF4ob1p60yAiQgfcMrwCoosIF47fl7+ECgRsxR+RLDUhQ2e6sCqr/mWgNCfE="
+    secure: lCE/+nl9ytjVt0MMcpvX2HGiaXq7aTTBF/v6HOJXg5YzzcYosd2aQuvhu8goTsjcMcCg1W3oFErpUgAsBMORvClTedzJ2lX4HXUXs7S1Ii6TEqud38jPzr9mbyu9kkwT06Wy1AJb0RpN733onTaNUut1cX8kH5YlC5uJYGjwpebRsij0G4vWjAXnhr3yLO
+            Omx63xAjq2EFyQPnU0v2Lxo1aWZCU2vRoVbOAGVnS3kfIJskQmqMLmBQsZaExDe1V4st9wHmh+5Qoz9Bh2ckOu8xBthAqZk3FoE4vZ8qWetFSDwwGuX9YPSdNwGgtaKZhSA5niNrrD5GnShwXVAqn6lgD3hCS8pU/LAAu3exIBzImLpr5ilEPwHJH8IO5MNXE7dsYB+c1
+            mN1P4u8sSmTcJwS2sYwaqVk7115zUSOlBtJ0NzMtKmggLvyPa4LJo8xRYwgXoi1CfnUIMA00agRAdBPzfCsrXT7OvxViMM5SV9hMFEDYd9MXufZfE875Y3RZ8RNvrHUklzxVmYCIdXCvRUgg/2tNbWD1KzqEDMRXgjeiZfuU74jbcWOtJxYizHnpS53dfgGUH5RxSm+mK
+            da7vfJaupmZV7BWCNhkLsYAyZ3Xe4OWZc8R69Rin6uICiAQ7ZkKuoAhg3t0AbAfyCXCJaE0MKvIn+5IrchGA1NLYwqk=
   bucket: drivetogain.ga
   region: us-west-2
   local-dir: dist
