@@ -2,9 +2,13 @@
 <div class="jumbotron text-center">
   <h1>D2G App</h1>
   <p class="lead">Welcome to our open source project for keeping track of your expenses</p>
-  <div>
+  <div *ngIf="!authService.isLoggedIn">
     <a [routerLink]="['/login']" class="btn btn-primary">Login</a>
     <a [routerLink]="['/register']" class="btn btn-default">Register</a>
+  </div>
+  <div *ngIf="authService.isLoggedIn">
+    <a [routerLink]="['/profile']" class="btn btn-primary">Profile</a>
+    <a (click)="onLogout()" class="btn btn-default">Logout</a>
   </div>
 </div>
 
