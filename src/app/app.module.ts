@@ -12,12 +12,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AuthGuard } from './guards/auth.guard';
+import { GuestGuard } from './guards/guest.guard';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'login', component: LoginComponent, canActivate: [GuestGuard] },
+  { path: 'register', component: RegisterComponent, canActivate: [GuestGuard] },
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
@@ -37,6 +39,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     AuthService,
+    AuthGuard,
+    GuestGuard,
   ],
   bootstrap: [AppComponent]
 })

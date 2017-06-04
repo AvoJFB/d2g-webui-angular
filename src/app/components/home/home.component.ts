@@ -19,9 +19,9 @@ export class HomeComponent implements OnInit {
       .subscribe(res => {
         if (res.service.errorCode === 0) {
           console.log(res);
-          this.router.navigate(['/'])
+          this.router.navigate(['/']);
         }
-      })
+      });
   }
 
 }

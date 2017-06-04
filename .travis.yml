@@ -6,7 +6,8 @@ before_script:
 script: ng build
 deploy:
   provider: s3
-  access_key_id: AKIAIHSQYVRI2NZ7YX2A
+  access_key_id: AKIAIHSQYVRI2NZ7YX2A\
+
   secret_access_key:
     secure: lCE/+nl9ytjVt0MMcpvX2HGiaXq7aTTBF/v6HOJXg5YzzcYosd2aQuvhu8goTsjcMcCg1W3oFErpUgAsBMORvClTedzJ2lX4HXUXs7S1Ii6TEqud38jPzr9mbyu9kkwT06Wy1AJb0RpN733onTaNUut1cX8kH5YlC5uJYGjwpebRsij0G4vWjAXnhr3yLO
             Omx63xAjq2EFyQPnU0v2Lxo1aWZCU2vRoVbOAGVnS3kfIJskQmqMLmBQsZaExDe1V4st9wHmh+5Qoz9Bh2ckOu8xBthAqZk3FoE4vZ8qWetFSDwwGuX9YPSdNwGgtaKZhSA5niNrrD5GnShwXVAqn6lgD3hCS8pU/LAAu3exIBzImLpr5ilEPwHJH8IO5MNXE7dsYB+c1
