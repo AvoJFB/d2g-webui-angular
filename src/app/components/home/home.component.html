@@ -8,7 +8,7 @@
   </div>
   <div *ngIf="authService.isLoggedIn">
     <a [routerLink]="['/profile']" class="btn btn-primary">Profile</a>
-    <a (click)="onLogout()" class="btn btn-default">Logout</a>
+    <a [routerLink]="['/expenses']" class="btn btn-default">Expenses</a>
   </div>
 
 </div>

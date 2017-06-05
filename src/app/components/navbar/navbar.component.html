@@ -12,13 +12,19 @@
 
       <ul *ngIf="!authService.isLoggedIn" class="nav navbar-nav navbar-right">
         <li [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/login']">Login</a></li>
+            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/login']">Login</a>
+        </li>
         <li [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/register']">Register</a></li>
+            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/register']">Register</a>
+        </li>
       </ul>
       <ul *ngIf="authService.isLoggedIn" class="nav navbar-nav navbar-right">
         <li [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/profile']">Profile</a></li>
+            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/profile']">Profile</a>
+        </li>
+        <li [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/expenses']">Expenses</a>
+        </li>
         <li><a (click)="onLogout()">Logout</a></li>
       </ul>
 

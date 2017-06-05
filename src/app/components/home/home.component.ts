@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -9,19 +8,9 @@ import { AuthService } from '../../services/auth.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
-  }
-
-  onLogout() {
-    this.authService.logout()
-      .subscribe(res => {
-        if (res.service.errorCode === 0) {
-          console.log(res);
-          this.router.navigate(['/']);
-        }
-      });
   }
 
 }
