@@ -17,6 +17,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { GuestGuard } from './guards/guest.guard';
 import { ExpensesComponent } from './components/expenses/expenses.component';
 import { RedComponentComponent } from './components/red-component/red-component.component';
+import { PriceComponent } from './components/price/price.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     ProfileComponent,
     ExpensesComponent,
-    RedComponentComponent
+    RedComponentComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,10 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     AgGridModule.withComponents(
-      [RedComponentComponent]
+      [
+        RedComponentComponent,
+        PriceComponent,
+      ]
     )
   ],
   providers: [
